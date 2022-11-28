@@ -55,7 +55,7 @@ calcAge: function () {
 
 getSummary: function() {
     return `My name is ${this.firstName} ${this.lastName} and I'm a
-    ${this.calcAge()} year old ${this.job}. I have ${this.pets} pets at home.`
+    ${this.calcAge()} year old ${this.job}. I have ${this.pets > 1 ? "pets" : "a pet"} at home.`
 }
 };
 
@@ -77,6 +77,12 @@ if (day === "monday") {
     console.log("not valid");
 }
 
+function mySelf (name, age, favFood) {
+    const myAge = (2022 - age) 
+    return console.log(`My name is ${name} I am ${myAge} years old, and my favourite food is ${favFood}`);
+}
 
-
+mySelf("Rhiannon", 1993, "Sushi");
+mySelf("Rhi", 1945, "Chicken");
+mySelf("Lola", 2003, "Pickels");
 
